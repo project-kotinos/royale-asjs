@@ -285,7 +285,8 @@
         <configuration>
           <!-- Make all artifacts be released in the same version -->
           <autoVersionSubmodules>true</autoVersionSubmodules>
-          <arguments combine.self="override">-P${release-profiles}</arguments>
+          <!-- We need to forward the gecko driver settings to the release build too -->
+          <arguments combine.self="override">-P${release-profiles} -Dwebdriver.gecko.driver=${webdriver.gecko.driver}</arguments>
         </configuration>
       </plugin>
 
