@@ -29,7 +29,7 @@
 
   <groupId>org.apache.royale.framework</groupId>
   <artifactId>royale-framework-parent</artifactId>
-  <version>0.9.9-SNAPSHOT</version>
+  <version>0.9.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Apache Royale: Framework: Parent</name>
@@ -224,12 +224,6 @@
           <configuration>
             <skip>true</skip>
           </configuration>
-        </plugin>
-
-        <plugin>
-          <groupId>com.theoryinpractise</groupId>
-          <artifactId>reproducible-maven-plugin</artifactId>
-          <version>1.0.1</version>
         </plugin>
 
         <plugin>
@@ -556,20 +550,6 @@
       </properties>
       <build>
         <plugins>
-          <plugin>
-            <groupId>com.theoryinpractise</groupId>
-            <artifactId>reproducible-maven-plugin</artifactId>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-release-plugin</artifactId>
-            <configuration>
-              <preparationGoals>clean com.theoryinpractise:reproducible-maven-plugin:apply install</preparationGoals>
-              <completionGoals>com.theoryinpractise:reproducible-maven-plugin:clear</completionGoals>
-            </configuration>
-          </plugin>
-
           <!--
             Create MD5 and SHA512 checksum files for the release artifacts.
           -->
