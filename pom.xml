@@ -45,7 +45,7 @@
     <connection>scm:git:git://github.com/chrisdutz/royale-asjs.git</connection>
     <developerConnection>scm:git:git@github.com:chrisdutz/royale-asjs.git</developerConnection>
     <url>https://github.com/chrisdutz/royale-asjs</url>
-    <tag>HEAD</tag>
+    <tag>rel/0.9.8</tag>
   </scm>
 
   <properties>
