@@ -29,7 +29,7 @@
 
   <groupId>org.apache.royale.framework</groupId>
   <artifactId>royale-framework-parent</artifactId>
-  <version>0.9.8-SNAPSHOT</version>
+  <version>0.9.8</version>
   <packaging>pom</packaging>
 
   <name>Apache Royale: Framework: Parent</name>
@@ -45,7 +45,7 @@
     <connection>scm:git:git://github.com/chrisdutz/royale-asjs.git</connection>
     <developerConnection>scm:git:git@github.com:chrisdutz/royale-asjs.git</developerConnection>
     <url>https://github.com/chrisdutz/royale-asjs</url>
-    <tag>rel/0.9.8</tag>
+    <tag>release/0.9.8</tag>
   </scm>
 
   <properties>
