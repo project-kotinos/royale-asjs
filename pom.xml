@@ -48,19 +48,6 @@
     <tag>HEAD</tag>
   </scm>
 
-  <distributionManagement>
-    <repository>
-      <id>C-Ware Artifactory</id>
-      <name>C-Ware Artifactory-releases</name>
-      <url>https://dev.c-ware.de/artifactory/royale-release</url>
-    </repository>
-    <snapshotRepository>
-      <id>C-Ware Artifactory</id>
-      <name>C-Ware Artifactory-snapshots</name>
-      <url>https://dev.c-ware.de/artifactory/royale-release</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <properties>
     <java.version>1.7</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -102,6 +89,16 @@
 
   <!-- Only configure the site distribution as the rest is handled by the apache parent -->
   <distributionManagement>
+    <repository>
+      <id>C-Ware Artifactory</id>
+      <name>C-Ware Artifactory-releases</name>
+      <url>https://dev.c-ware.de/artifactory/royale-release</url>
+    </repository>
+    <snapshotRepository>
+      <id>C-Ware Artifactory</id>
+      <name>C-Ware Artifactory-snapshots</name>
+      <url>https://dev.c-ware.de/artifactory/royale-release</url>
+    </snapshotRepository>
     <site>
       <id>apache.website</id>
       <url>scm:git:https://gitbox.apache.org/repos/asf/royale-asjs.git</url>
